@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom property</title>
+    <style>
+        :root {
+            --main-color: slateblue;
+            --border-colors: darkblue;
+        }
+
+        h2 {
+            color: var(--main-color);
+            border: var(--border-colors);
+            border: 2px solid red;
+        }
+
+        h3 {
+            border: 3px solid darkred;
+            background-color: lightblue;
+        }
+
+        p {
+            color: var(--main-color);
+        }
+
+        /* .side-nav {
+            border: 3px solid darksalmon;
+            width: 100%;
+            height: 50px;
+        } */
+
+        .side-nav,
+        .blogs {
+            float: left;
+        }
+
+        footer {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>I am exploring custom property</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, doloremque?</p>
+    </header>
+    <main>
+        <h2>My awesome content</h2>
+        <h3>Hi vatija! koi jaw?</h3>
+        <section class="side-nav">
+            <aside>
+                my side navigation
+            </aside>
+            <div class="blogs">
+                <h4>blog</h4>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright a khaya dibo tmk</p>
+    </footer>
+</body>
+
+</html>
